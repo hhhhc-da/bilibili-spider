@@ -5,9 +5,14 @@ bilibili 视频信息个人收集用项目（用于自动整理评论，不可�
 
 ### 安装教程
 
+忘记写 requirements.txt 了, 使用的时候缺什么装什么就可以了, 如果缺少某个库欢迎提 issue
+
 ```
-pip install -r requirements.txt
+conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install scikit-learn tqdm pandas seaborn matplotlib numpy transformers openpyxl fake_useragent joblib
 ```
+
+bert-chinese 自行从 Hugging Face 下载 HF 格式的中文分类基础模型参数
 
 ### 爬虫使用说明
 
